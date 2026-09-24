@@ -4,7 +4,7 @@ import CardKaryawan from "../components/CardKaryawan";
 import { dataMarketing } from "../data/database";
 
 export default function Home() {
-  console.log(dataMarketing);
+  console.log(Array.isArray(dataMarketing));
   return (
     // MAIN CONTAINER
     <main className="w-auto h-auto bg-linear-to-b from-red-500 to-red-900 p-4 flex items-center flex-col text-white">
@@ -14,13 +14,13 @@ export default function Home() {
       </header>
 
       {/* MAIN CONTENT */}
-      <body className="w-screen flex items-center justify-center flex-col bg-amber-400">
+      <div className="w-auto flex items-center justify-center flex-col">
         <div>
           {dataMarketing.map((data, index) => (
             <CardKaryawan data={data} key={index} />
           ))}
         </div>
-      </body>
+      </div>
     </main>
   );
 }

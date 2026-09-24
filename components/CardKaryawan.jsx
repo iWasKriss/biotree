@@ -6,20 +6,19 @@ function bukaWebsite(linkWebsite) {
   window.open(linkWebsite, "_blank");
 }
 
-export default function CardKaryawan(data) {
+export default function CardKaryawan({ data }) {
   console.log(data);
   return (
     <div className="w-auto h-auto border-2 border-white rounded-xl flex flex-col items-center p-6 drop-shadow-lg">
-      <h1>
-        <Image
-          src={data.profilePicture}
-          alt={data.nama}
-          className="h-24 w-24 rounded-full"
-        />
-      </h1>
       <h2 className="text-lg font-bold text-center">{data.nama}</h2>
       <h3 className="text-sm text-center">{data.biodata}</h3>
-
+      <Image
+        src={data.profilePicture}
+        alt="pfp-1"
+        className="h-24 w-24 rounded-full"
+        width={96}
+        height={96}
+      />
       {/* Links */}
       <div>
         <div
