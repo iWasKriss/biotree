@@ -1,7 +1,5 @@
 import logo from "../assets/logo/logo_sembada.png";
 import Image from "next/image";
-import { AirVent } from "lucide-react";
-import { FaYoutube } from "react-icons/fa";
 import CardKaryawan from "../components/CardKaryawan";
 
 export default function Home() {
@@ -10,7 +8,6 @@ export default function Home() {
     <main className="w-screen h-screen bg-linear-to-b from-red-500 to-red-900 p-4 flex items-center flex-col text-white">
       {/* HEADER */}
       <header className="w-auto h-auto p-4">
-        <h1>test</h1>
         <Image src={logo} alt="Logo" className="h-12 w-auto" />
       </header>
 
@@ -21,4 +18,3 @@ export default function Home() {
     </main>
   );
 }
-

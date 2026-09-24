@@ -1,7 +1,6 @@
 import Avatar from "./Avatar";
 import CardLink from "./CardLink";
-import { AirVent } from "lucide-react";
-import { FaYoutube } from "react-icons/fa";
+import { dataLinkUtama } from "../data/database";
 
 export default function CardKaryawan() {
   return (
@@ -21,18 +20,3 @@ export default function CardKaryawan() {
     </div>
   );
 }
-
-const dataLinkUtama = [
-  {
-    nama: "Christopher Joshua",
-    biodata: "IT Business Developer @PT BPR Multi Sembada Dana",
-    link: "https://youtube.com",
-    text: "Youtube",
-    icon: <AirVent />,
-  },
-  {
-    link: "https://instagram.com",
-    text: "Instagram",
-    icon: <FaYoutube size={24} />,
-  },
-];
